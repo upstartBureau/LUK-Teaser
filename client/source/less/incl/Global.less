@@ -8,7 +8,6 @@
 @import "Circular-Bold.less";
 * {
   box-sizing: border-box;
-  // outline: 1px dashed orange;
 }
 html, body {
   height: 100%;
@@ -57,15 +56,12 @@ main.content {
   }
   section.hero {
     position: absolute;
-    // left: 147px;
     left: 12.5vmin;
     top: 50%;
     transform: translateY(-50%);
     h1 {
-      // font-size: 127px;
       font-size: 9vmin;
       font-family: 'CircularBlack', sans-serif;
-      // letter-spacing: 27.5px;
       letter-spacing: 2.4vmin;
       margin-bottom: 48px;
       span {
@@ -73,7 +69,6 @@ main.content {
       }
     }
     h4 {
-      // font-size: 27.5px;
       font-size: 1.9vmin;
       letter-spacing: 0.1vmin;
       margin-bottom: 1.4vmin;
@@ -87,15 +82,16 @@ main.content {
     }
   }
   footer.footer {
-    position: absolute;
-    left:0;
-    bottom: 0;
-    width: 100%;
+    // width: calc(100% - 34px);
+    // position: absolute;
+    // left:0;
+    // bottom: 0;
+    // width: 100%;
     div.left-column {
-      position: fixed;
-      left: 17px;
-      bottom: 17px;
-      height: 213px;
+      // position: fixed;
+      // left: 17px;
+      // bottom: 17px;
+      // height: 213px;
       div.logo {
         // width: 9.5vmin;
         // position: absolute;
@@ -106,7 +102,7 @@ main.content {
         // height: 100%;
         // text-align: right;
         width: 9.5vmin;
-        position: absolute;
+        position: relative;
         top: 0;
         display: inline-block;
         height: 100%;
@@ -114,13 +110,11 @@ main.content {
         padding-left: 2vmin;
         svg {
           position: relative;
-          // top: -83px;
           display: inline-block;
-          // left: -19px;
         }
       }
       div.text {
-        position: absolute;
+        position: relative;
         left: 10.5vmin;
         display: inline-block;
         p {
@@ -129,11 +123,8 @@ main.content {
           text-rendering: optimizeLegibility;
           height: 100%;
           width: 37.5vmin;
-          // width: 447.5px;
-          // max-width: 100%;
           padding-top: 0.6vmin;
           font-size: 1.425vmin;
-          // line-height: 24px;
           line-height: 2.15vmin;
         }
         p.copyright {
@@ -142,7 +133,6 @@ main.content {
       }
     }
     div.right-column {
-      position: fixed;
       right: 17px;
       bottom: 17px;
       height:127px;
@@ -185,14 +175,12 @@ aside.modal {
   form {
     display: inline-block;
     margin: 0 auto;
-    // outline: 1px dotted yellow;
     text-align: left;
     position: relative;
     vertical-align: bottom;
   }
   div.form-beside {
     display: inline-block;
-    // outline: 1px solid yellow;
     height:341px;
     vertical-align: bottom;
     padding-left: 15px;
@@ -245,7 +233,6 @@ div.form-group {
   z-index: 8;
   right: 15px;
   top:14px;
-  // display: none;
   height: 21px;
   width: 21px;
 }

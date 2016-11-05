@@ -242,21 +242,9 @@ main.content section.hero h4.underline {
   font-weight: 600;
   border-bottom: 2px solid #FFFFFF;
 }
-main.content footer.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-main.content footer.footer div.left-column {
-  position: fixed;
-  left: 17px;
-  bottom: 17px;
-  height: 213px;
-}
 main.content footer.footer div.left-column div.logo {
   width: 9.5vmin;
-  position: absolute;
+  position: relative;
   top: 0;
   display: inline-block;
   height: 100%;
@@ -268,7 +256,7 @@ main.content footer.footer div.left-column div.logo svg {
   display: inline-block;
 }
 main.content footer.footer div.left-column div.text {
-  position: absolute;
+  position: relative;
   left: 10.5vmin;
   display: inline-block;
 }
@@ -286,7 +274,6 @@ main.content footer.footer div.left-column div.text p.copyright {
   color: rgba(255, 255, 255, 0.66);
 }
 main.content footer.footer div.right-column {
-  position: fixed;
   right: 17px;
   bottom: 17px;
   height: 127px;
