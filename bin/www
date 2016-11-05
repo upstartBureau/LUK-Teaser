@@ -1,0 +1,12 @@
+'use strict'
+
+const Site = require('../index').Site
+const fs = require('fs')
+const HTTP = require('http')
+const STANDARDPORT = require('../server/conf').Conf.Site.STANDARDPORT
+
+var SiteServer = HTTP.createServer(Site)
+SiteServer.listen(STANDARDPORT)
+module.exports = {
+  SiteServer: SiteServer
+}

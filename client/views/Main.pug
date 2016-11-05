@@ -1,0 +1,45 @@
+extends Layout/Base
+block content
+  main.content
+    header.header
+      h2 SIMPLIFIED BOOKING
+    section.hero
+      h1 LÜ
+        span K.
+      h1 DISCOVE
+        span R.
+      h1 BOO
+        span K.
+      h4 High-quality talent, from the industry’s leading agencies.
+      br
+      h4.underline One location.
+    footer.footer
+      div.left-column
+        div.logo
+          include Partials/SVG/LUKIcon
+        div.text
+          p Finding talent for your photoshoots is time-consuming and tedious. That’s why we created LÜK, a marketplace to discover and book professional models, photographers, stylists and hair and makeup artists.
+          p.copyright Copyright © 2016 LÜK LLC.
+      div.right-column
+        div.logo
+          include Partials/SVG/AppStoreIcon
+        div.links
+          a#brands For Brands
+          a#agencies For Agencies
+  aside.modal#ModalForm
+    div.modal-content
+      include Partials/EmailModal
+      div.form-beside
+        include Partials/SVG/CrossIcon
+      div.form-beside
+        include Partials/SVG/User
+        div.contact-content
+          p Call us direct
+           | #[br]
+           | #[a(href="tel:+18883332324") 888.333.2324]
+           | #[br]
+           | M-F 9-6
+        br
+        include Partials/SVG/Mail
+        div.contact-content
+         p.second-chunk #[a(href="mailto:info@lukat.me" class="email-static-link") info@LUKat.me]

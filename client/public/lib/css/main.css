@@ -1,0 +1,461 @@
+/**
+  *
+  * RESET co. sanitize.css v3.3.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css
+  *
+  **/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+  *
+  * House Declarations
+  *
+  **/
+/* Webfont: Circular-Book */
+@font-face {
+  font-family: 'CircularBook';
+  src: url('../etc/webfonts/CircularBook/Circular-Book.eot');
+  /* IE9 Compat Modes */
+  src: url('../etc/webfonts/CircularBook/Circular-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../etc/webfonts/CircularBook/Circular-Book.woff') format('woff'), /* Modern Browsers */ url('../etc/webfonts/CircularBook/Circular-Book.ttf') format('truetype'), /* Safari, Android, iOS */ url('../etc/webfonts/CircularBook/Circular-Book.svg#Circular-Book') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Circular-Black */
+@font-face {
+  font-family: 'CircularBlack';
+  src: url('../etc/webfonts/CircularBlack/Circular-Black.eot');
+  /* IE9 Compat Modes */
+  src: url('../etc/webfonts/CircularBlack/Circular-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../etc/webfonts/CircularBlack/Circular-Black.woff') format('woff'), /* Modern Browsers */ url('../etc/webfonts/CircularBlack/Circular-Black.ttf') format('truetype'), /* Safari, Android, iOS */ url('../etc/webfonts/CircularBlack/Circular-Black.svg#Circular-Black') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+/* Webfont: Circular-Bold */
+@font-face {
+  font-family: 'CircularBold';
+  src: url('../etc/webfonts/CircularBold/Circular-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../etc/webfonts/CircularBold/Circular-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../etc/webfonts/CircularBold/Circular-Bold.woff') format('woff'), /* Modern Browsers */ url('../etc/webfonts/CircularBold/Circular-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../etc/webfonts/CircularBold/Circular-Bold.svg#Circular-Bold') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-family: 'CircularBook', sans-serif;
+}
+body {
+  position: relative;
+  padding: 17px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+main.content {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-color: #1C58C7;
+  background-image: url('../img/luk-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+main.content header.header {
+  position: absolute;
+  top: 6.55vmin;
+  left: 12.5vmin;
+}
+main.content header.header h2 {
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.3vmin;
+  letter-spacing: 0.62vmin;
+  font-family: 'CircularBold', sans-serif;
+}
+main.content section.hero {
+  position: absolute;
+  left: 12.5vmin;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.content section.hero h1 {
+  font-size: 9vmin;
+  font-family: 'CircularBlack', sans-serif;
+  letter-spacing: 2.4vmin;
+  margin-bottom: 48px;
+}
+main.content section.hero h1 span {
+  letter-spacing: 12px;
+}
+main.content section.hero h4 {
+  font-size: 1.9vmin;
+  letter-spacing: 0.1vmin;
+  margin-bottom: 1.4vmin;
+  display: inline-block;
+  font-family: 'CircleBook', sans-serif;
+}
+main.content section.hero h4.underline {
+  font-family: 'CircleBold', sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid #FFFFFF;
+}
+main.content footer.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+main.content footer.footer div.left-column {
+  position: fixed;
+  left: 17px;
+  bottom: 17px;
+  height: 213px;
+}
+main.content footer.footer div.left-column div.logo {
+  width: 9.5vmin;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  text-align: left;
+  padding-left: 2vmin;
+}
+main.content footer.footer div.left-column div.logo svg {
+  position: relative;
+  display: inline-block;
+}
+main.content footer.footer div.left-column div.text {
+  position: absolute;
+  left: 10.5vmin;
+  display: inline-block;
+}
+main.content footer.footer div.left-column div.text p {
+  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 37.5vmin;
+  padding-top: 0.6vmin;
+  font-size: 1.425vmin;
+  line-height: 2.15vmin;
+}
+main.content footer.footer div.left-column div.text p.copyright {
+  color: rgba(255, 255, 255, 0.66);
+}
+main.content footer.footer div.right-column {
+  position: fixed;
+  right: 17px;
+  bottom: 17px;
+  height: 127px;
+  width: 511px;
+}
+main.content footer.footer div.right-column div.logo {
+  display: inline-block;
+  margin-right: 5px;
+}
+main.content footer.footer div.right-column div.logo svg {
+  display: inline-block;
+}
+main.content footer.footer div.right-column div.links {
+  display: inline-block;
+}
+main.content footer.footer div.right-column div.links a {
+  padding: 20px;
+  position: relative;
+  top: -21px;
+  font-size: 22px;
+  display: inline-block;
+}
+aside.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(44, 92, 171, 0.9);
+}
+aside.modal div.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+aside.modal form {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  vertical-align: bottom;
+}
+aside.modal div.form-beside {
+  display: inline-block;
+  height: 341px;
+  vertical-align: bottom;
+  padding-left: 15px;
+}
+aside.modal div.form-beside div,
+aside.modal div.form-beside p {
+  display: inline-block;
+}
+aside.modal div.form-beside p {
+  margin-left: 5px;
+}
+aside.modal div.form-headline h1 {
+  font-family: 'CircularBlack', sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+aside.modal input[type="text"] {
+  width: 300px;
+  height: 40px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 0;
+  -webkit-appearance: none;
+  font-size: 14px;
+}
+aside.modal input {
+  outline: 0;
+}
+aside.modal textarea {
+  width: 300px;
+  height: 120px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  -webkit-appearance: none;
+  resize: none;
+}
+div.form-group {
+  position: relative;
+}
+.indication {
+  position: absolute;
+  display: inline-block;
+  z-index: 8;
+  right: 15px;
+  top: 14px;
+  height: 21px;
+  width: 21px;
+}
+.CrossIcon {
+  width: 25px;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+}
+.Cross {
+  fill: #FFFFFF;
+}
+.SuccessIcon {
+  fill: #5374d5;
+}
+.ErrorIcon {
+  fill: #eb4d6b;
+}
+div.form-group.error input[type="text"] {
+  outline: 3px solid #eb4d6b;
+  color: #eb4d6b;
+}
+.contacticon {
+  display: inline-block;
+}
+.User {
+  width: 12px;
+  height: 20px;
+  position: relative;
+  top: -18px;
+}
+#User {
+  fill: #FFFFFF;
+}
+.Mail {
+  width: 12px;
+  position: relative;
+  top: 19px;
+}
+#Mail {
+  fill: #FFFFFF;
+}
+#AppStore {
+  fill: #FFFFFF;
+}
+#AppStoreIcon {
+  width: 16.3vmin;
+}
+#LUKIcon {
+  height: 4.7vmin;
+  width: 6.2vmin;
+}
+#LUK {
+  fill: #FFFFFF;
+}
+.contact-content p {
+  position: relative;
+  top: 20px;
+  line-height: 21px;
+  padding-top: 30px;
+}
+.contact-content p a {
+  font-family: 'CircleBlack', sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.contact-content p.second-chunk {
+  padding-top: 20px;
+}
+.contact-content p.second-chunk a.email-static-link {
+  top: 0;
+  border-bottom: 2px solid #FFFFFF;
+}
+a {
+  cursor: pointer;
+}

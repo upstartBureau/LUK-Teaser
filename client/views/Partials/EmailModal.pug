@@ -1,0 +1,24 @@
+form
+  div.form-headline
+    h1 Have a Question?
+  div.form-group
+    label(for="user_name")
+    input(type="text" name="user_name" placeholder="Your Name*")
+    include SVG/CheckIcon
+    include SVG/XIcon
+  div.form-group
+    label(for="co_name")
+    input(type="text" name="co_name" placeholder="Company Name*")
+    include SVG/CheckIcon
+    include SVG/XIcon
+  div.form-group.error
+    label(for="email")
+    input(type="text" name="email" placeholder="Email Address*")
+    include SVG/CheckIcon
+    include SVG/XIcon
+  div.form-group
+    label(for="message")
+    textarea(name="message" placeholder="Message")
+  div.form-button-group
+    a Cancel
+    input(type="submit" value="Send")

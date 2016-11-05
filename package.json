@@ -1,0 +1,43 @@
+{
+  "name": "luk-at-me",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for LÜK app",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp && nodemon bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "body-parser": "^1.15.2",
+    "browserify": "^13.1.1",
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watchify": "^0.6.0",
+    "less": "^2.7.1",
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.6.4",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "utils-merge": "^1.0.0",
+    "vinyl-buffer": "^1.0.0"
+  }
+}
