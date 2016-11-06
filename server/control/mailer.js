@@ -1,7 +1,8 @@
 'use strict'
 
 const nodemailer = require('nodemailer')
-const Conf = require('../conf')
+const Conf = require('../conf').Conf
+const Secret = require('../conf/secret')
 
 var Mail = {
   transporter: nodemailer.createTransport({
@@ -17,7 +18,7 @@ module.exports = {
   ContactEmail: function (FormData) {
     Mail.transporter.sendMail({
       from: '"LÜK Contact Form" david@upstartbureau.io',
-      to: '"Matt" finelli@shotwelldigital.com',
+      to: '"Matt" davidjohnson1297@gmail.com',
       subject: 'Contact Aquisition',
       text: null,
       html: FormData

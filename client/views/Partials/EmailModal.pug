@@ -1,24 +1,24 @@
-form
+form(id='MailForm')
   div.form-headline
     h1 Have a Question?
   div.form-group
-    label(for="user_name")
-    input(type="text" name="user_name" placeholder="Your Name*")
+    label(for='UserName')
+    input(type='text' name='UserName' id='UserName' placeholder='Your Name*' value='' class='')
     include SVG/CheckIcon
     include SVG/XIcon
   div.form-group
-    label(for="co_name")
-    input(type="text" name="co_name" placeholder="Company Name*")
-    include SVG/CheckIcon
-    include SVG/XIcon
-  div.form-group.error
-    label(for="email")
-    input(type="text" name="email" placeholder="Email Address*")
+    label(for='EntityName')
+    input(type='text' name='EntityName' id='EntityName' placeholder='' value='' class='')
     include SVG/CheckIcon
     include SVG/XIcon
   div.form-group
-    label(for="message")
-    textarea(name="message" placeholder="Message")
+    label(for='EmailAddress')
+    input(type='text' name='EmailAddress' id='EmailAddress' placeholder='Email Address*' value='' class='')
+    include SVG/CheckIcon
+    include SVG/XIcon
+  div.form-group
+    label(for='EmailMessage')
+    textarea(id='EmailMessage' name='EmailMessage' placeholder='Message' value='' class='')
   div.form-button-group
-    a Cancel
-    input(type="submit" value="Send")
+    a(id='CancelButton') Cancel
+    a(id='SubmitButton') Send

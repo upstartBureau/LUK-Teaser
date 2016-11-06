@@ -36,6 +36,7 @@ gulp.task('server', () => {
 })
 
 gulp.task('watch', () => {
+  gulp.watch('./client/source/js/**/*.js', ['browserify'])
   gulp.watch('./client/source/less/**/*.less', ['less'])
   gulp.watch('./client/source/img/**/*.*', ['copy'])
   gulp.watch('./client/source/etc/**/*.*', ['copy'])
