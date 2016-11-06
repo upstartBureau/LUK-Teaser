@@ -105,7 +105,7 @@ SubmitButton.addEventListener('click', function (evt) {
       email: document.getElementById('EmailAddress').value,
       message: document.getElementById('EmailMessage').value
     }
-    Request.open('POST', 'http://localhost:8080/send', true)
+    Request.open('POST', 'http://lukat.me/send', true)
     Request.setRequestHeader('Content-type', 'application/json')
     Request.send(JSON.stringify(MailFormData))
   }
