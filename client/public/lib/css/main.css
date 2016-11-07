@@ -294,7 +294,7 @@ main.content footer.footer div.right-column div.logo {
   margin-right: 5px;
   vertical-align: bottom;
 }
-main.content footer.footer div.right-column div.logo svg {
+main.content footer.footer div.right-column div.logo a svg {
   display: inline-block;
 }
 main.content footer.footer div.right-column div.links {
