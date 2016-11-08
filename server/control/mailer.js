@@ -18,7 +18,7 @@ module.exports = {
   ContactEmail: function (FormData) {
     Mail.transporter.sendMail({
       from: '"LÜK Contact Form" david@upstartbureau.io',
-      to: '"Matt" davidjohnson1297@gmail.com',
+      to: '"Matt" finelli@shotwelldigital.com',
       subject: 'Contact Aquisition',
       text: null,
       html: FormData

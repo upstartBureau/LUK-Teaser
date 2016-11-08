@@ -192,6 +192,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+body * {
+  transition: all 10ms;
+}
 main.content {
   height: 100%;
   width: 100%;
