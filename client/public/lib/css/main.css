@@ -572,9 +572,10 @@ input[type="text"] {
     bottom: 100px;
   }
   #LUKIcon {
-    width: 42px;
+    width: 100%;
   }
   main.content footer.footer div.left-column div.logo {
+    width: 20px;
     padding-left: 0;
   }
   main.content footer.footer div.left-column div.text p {
