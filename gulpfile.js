@@ -14,6 +14,7 @@ var watching = false
 
 gulp.task('enable-watch-mode', () => { watching = true })
 gulp.task('watchify', ['enable-watch-mode', 'browserify'])
+
 gulp.task('less', () => {
   return gulp.src('./client/source/less/main.less')
     .pipe(less())
@@ -25,7 +26,7 @@ gulp.task('copy', () => {
 })
 gulp.task('browserify', watchify(function (watchify) {
   return gulp.src('./client/source/js/index.js')
-    .pipe(watchify({ watch: watching }))
+    .pipe(watchify(browserify('./client/source/js/index.js', { debug: true }).transform(babelify)))
     .pipe(gulp.dest('./client/public/lib/js'))
 }))
 gulp.task('server', () => {
