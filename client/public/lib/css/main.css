@@ -527,10 +527,17 @@ div.break {
 }
 textarea,
 input[type="text"] {
+  max-width: 100%;
   -webkit-appearance: none;
   border-radius: 0;
 }
+#MailForm {
+  max-width: 100%;
+}
 @media only screen and (max-width: 820px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #MailForm {
+    margin-left: -5px;
+  }
   div.break {
     display: none;
   }
@@ -588,6 +595,7 @@ input[type="text"] {
     left: -50px;
   }
   aside.modal div.form-beside.contact-beside {
+    display: none;
     top: 370px;
     left: -36px;
   }
