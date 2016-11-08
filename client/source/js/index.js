@@ -3,6 +3,8 @@ var AgencyMailLink = document.getElementById('agencies')
 var ModalPopUpForm = document.getElementById('ModalForm')
 var CloseButton = document.getElementById('CloseButton')
 var EntityName = document.getElementById('EntityName')
+var MailForm = document.getElementById('MailForm')
+var SuccessMessage = document.getElementById('SuccessMessage')
 
 var CancelButton = document.getElementById('CancelButton')
 var SubmitButton = document.getElementById('SubmitButton')
@@ -96,7 +98,6 @@ EmailInput.addEventListener('blur', function () {
 })
 SubmitButton.addEventListener('click', function (evt) {
   evt.preventDefault()
-  console.log('fired!')
   if (!ErrorsExist) {
     MailFormData = {
       name: document.getElementById('UserName').value,
@@ -107,5 +108,14 @@ SubmitButton.addEventListener('click', function (evt) {
     Request.open('POST', 'http://lukat.me/send', true)
     Request.setRequestHeader('Content-type', 'application/json')
     Request.send(JSON.stringify(MailFormData))
+    MailForm.style.opacity = '0'
+    window.setTimeout(function () {
+      MailForm.style.display = 'none'
+    }, 400)
+    SuccessMessage.style.display = 'inline-block'
+    window.setTimeout(function () {
+      // ModalPopUpForm.style.opacity = '1'
+      SuccessMessage.style.opacity = '1'
+    }, 400)
   }
 })
