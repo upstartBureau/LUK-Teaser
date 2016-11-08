@@ -535,6 +535,9 @@ input[type="text"] {
   max-width: 100%;
 }
 @media only screen and (max-width: 820px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    padding: 10px;
+  }
   #MailForm {
     margin-left: -5px;
   }
